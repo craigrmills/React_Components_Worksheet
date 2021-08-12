@@ -1,6 +1,7 @@
 import React from 'react';
 import DisplayName from './Components/DislayName/DisplayName';
 import NameList from './Components/NameList/NameList';
+import AlertUser from './Components/AlertUser/AlertUser';
 
 function App() {
     const state = {
@@ -41,7 +42,7 @@ function App() {
         <div className="App">
             <DisplayName firstName={state.person.firstName} lastName={state.person.lastName}/>
             <NameList names={state.names}/>
-            {/* <AlertUser alertMe={displayAlert}/> */}
+            <AlertUser alertMe={displayAlert}/>
             {/* <SuperHeroesTable heroes={state.superheroes}/> */}
         </div>
     );
