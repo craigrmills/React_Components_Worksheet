@@ -2,6 +2,7 @@ import React from 'react';
 import DisplayName from './Components/DislayName/DisplayName';
 import NameList from './Components/NameList/NameList';
 import AlertUser from './Components/AlertUser/AlertUser';
+import SuperheroTable from './Components/SuperheroTable/SuperheroTable';
 
 function App() {
     const state = {
@@ -17,19 +18,19 @@ function App() {
                 superheroId: 1,
                 name: 'Batman',
                 primaryAbility: 'Wealthy',
-                secondarAbility: 'Rich'
+                secondaryAbility: 'Rich'
             },
             {
                 superheroId: 2,
                 name: 'Superman',
                 primaryAbility: 'Super strength',
-                secondarAbility: 'Fly'
+                secondaryAbility: 'Fly'
             },
             {
                 superheroId: 3,
                 name: 'Spiderman',
                 primaryAbility: 'Spider senses',
-                secondarAbility: 'Shoots web'
+                secondaryAbility: 'Shoots web'
             }
         ]
     }
@@ -43,7 +44,7 @@ function App() {
             <DisplayName firstName={state.person.firstName} lastName={state.person.lastName}/>
             <NameList names={state.names}/>
             <AlertUser alertMe={displayAlert}/>
-            {/* <SuperHeroesTable heroes={state.superheroes}/> */}
+            <SuperheroTable heroes={state.superheroes}/>
         </div>
     );
 }
