@@ -39,9 +39,9 @@ function App() {
     return (
         <div className="App">
             <DisplayName firstName={state.person.firstName} lastName={state.person.lastName}/>
-            <NameList names={state.names}/>
+            {/* <NameList names={state.names}/>
             <AlertUser alertMe={displayAlert}/>
-            <SuperHeroesTable heroes={state.superheroes}/>
+            <SuperHeroesTable heroes={state.superheroes}/> */}
         </div>
     );
 }
